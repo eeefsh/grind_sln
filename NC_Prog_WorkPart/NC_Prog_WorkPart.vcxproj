@@ -1,0 +1,367 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{39474d00-930f-4050-b439-34930b44d3fa}</ProjectGuid>
+    <RootNamespace>NC_Prog_WorkPart</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <TargetName>$(ProjectName)</TargetName>
+    <OutDir>$(SolutionDir)OutProgram\$(ProjectName)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)MidFiles\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <TargetName>$(ProjectName)</TargetName>
+    <OutDir>$(SolutionDir)OutProgram\$(ProjectName)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)MidFiles\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <TargetName>$(ProjectName)</TargetName>
+    <OutDir>$(SolutionDir)OutProgram\$(ProjectName)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)MidFiles\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <TargetName>$(ProjectName)</TargetName>
+    <OutDir>$(SolutionDir)OutProgram\$(ProjectName)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)MidFiles\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;xt_WIN32;_DEBUG;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <AdditionalIncludeDirectories>$(xt_vc_import_dir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalLibraryDirectories>$(xt_vc_import_dir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>if not exist "$(xt_vc_import_dir)\$(ProjectName)\lib\$(Platform)\$(Configuration)" md "$(xt_vc_import_dir)\$(ProjectName)\lib\$(Platform)\$(Configuration)"
+
+if not exist "$(xt_vc_import_dir)\$(ProjectName)\bin\$(Platform)\$(Configuration)" md "$(xt_vc_import_dir)\$(ProjectName)\bin\$(Platform)\$(Configuration)"
+
+if not exist "$(xt_vc_import_dir)\$(ProjectName)\include" md "$(xt_vc_import_dir)\$(ProjectName)\include"
+
+copy "$(OutDir)*.lib" "$(xt_vc_import_dir)\$(ProjectName)\lib\$(Platform)\$(Configuration)\*.lib"
+
+copy "$(OutDir)*.dll" "$(xt_vc_import_dir)\$(ProjectName)\bin\$(Platform)\$(Configuration)\*.dll"
+
+copy "$(ProjectName).h" "$(xt_vc_import_dir)\$(ProjectName)\include\$(ProjectName).h"</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;xt_WIN32;NDEBUG;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <Optimization>Disabled</Optimization>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <AdditionalIncludeDirectories>$(xt_vc_import_dir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalLibraryDirectories>$(xt_vc_import_dir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>if not exist "$(xt_vc_import_dir)\$(ProjectName)\lib\$(Platform)\$(Configuration)" md "$(xt_vc_import_dir)\$(ProjectName)\lib\$(Platform)\$(Configuration)"
+
+if not exist "$(xt_vc_import_dir)\$(ProjectName)\bin\$(Platform)\$(Configuration)" md "$(xt_vc_import_dir)\$(ProjectName)\bin\$(Platform)\$(Configuration)"
+
+if not exist "$(xt_vc_import_dir)\$(ProjectName)\include" md "$(xt_vc_import_dir)\$(ProjectName)\include"
+
+copy "$(OutDir)*.lib" "$(xt_vc_import_dir)\$(ProjectName)\lib\$(Platform)\$(Configuration)\*.lib"
+
+copy "$(OutDir)*.dll" "$(xt_vc_import_dir)\$(ProjectName)\bin\$(Platform)\$(Configuration)\*.dll"
+
+
+
+if not exist "$(xt_vc_import_dir)\$(ProjectName)\include\data_class" md "$(xt_vc_import_dir)\$(ProjectName)\include\data_class"
+
+
+if not exist "$(xt_vc_import_dir)\$(ProjectName)\include\gj_mode" md "$(xt_vc_import_dir)\$(ProjectName)\include\gj_mode"
+
+
+if not exist "$(xt_vc_import_dir)\$(ProjectName)\include\tri_mesh" md "$(xt_vc_import_dir)\$(ProjectName)\include\tri_mesh"
+
+
+if not exist "$(xt_vc_import_dir)\$(ProjectName)\include\send_data_API" md "$(xt_vc_import_dir)\$(ProjectName)\include\send_data_API"
+
+
+copy "data_class\*.h" "$(xt_vc_import_dir)\$(ProjectName)\include\data_class\*.h"
+copy "gj_mode\*.h" "$(xt_vc_import_dir)\$(ProjectName)\include\gj_mode\*.h"
+copy "tri_mesh\*.h" "$(xt_vc_import_dir)\$(ProjectName)\include\tri_mesh\*.h"
+copy "send_data_API\*.h" "$(xt_vc_import_dir)\$(ProjectName)\include\send_data_API\*.h"
+
+copy "MA_010101_NC_Prog_WorkPart.h" "$(xt_vc_import_dir)\manager_h\MA_010101_NC_Prog_WorkPart.h"</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>copy "$(xt_vc_import_dir)\glfw\bin\$(Platform)\$(Configuration)\*.dll" "$(OutDir)*.dll"
+copy "$(xt_vc_import_dir)\glfw\lib\$(Platform)\$(Configuration)\*.lib" "$(OutDir)*.lib"
+copy "$(xt_vc_import_dir)\armadillo\bin\$(Platform)\$(Configuration)\*.dll" "$(OutDir)*.dll"
+copy "$(xt_vc_import_dir)\armadillo\lib\$(Platform)\$(Configuration)\*.lib" "$(OutDir)*.lib"
+copy "$(xt_vc_import_dir)\Cal_ZuoBiaoBianHuan\lib\$(Platform)\$(Configuration)\*.lib" "$(OutDir)*.lib"
+copy "$(xt_vc_import_dir)\Cal_ZuoBiaoBianHuan\bin\$(Platform)\$(Configuration)\*.dll" "$(OutDir)*.dll"
+copy "$(xt_vc_import_dir)\File_STL\lib\$(Platform)\$(Configuration)\*.lib" "$(OutDir)*.lib"
+copy "$(xt_vc_import_dir)\File_STL\bin\$(Platform)\$(Configuration)\*.dll" "$(OutDir)*.dll"</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <AdditionalIncludeDirectories>$(xt_vc_import_dir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalLibraryDirectories>$(xt_vc_import_dir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>if not exist "$(xt_vc_import_dir)\$(ProjectName)\lib\$(Platform)\$(Configuration)" md "$(xt_vc_import_dir)\$(ProjectName)\lib\$(Platform)\$(Configuration)"
+
+if not exist "$(xt_vc_import_dir)\$(ProjectName)\bin\$(Platform)\$(Configuration)" md "$(xt_vc_import_dir)\$(ProjectName)\bin\$(Platform)\$(Configuration)"
+
+if not exist "$(xt_vc_import_dir)\$(ProjectName)\include" md "$(xt_vc_import_dir)\$(ProjectName)\include"
+
+copy "$(OutDir)*.lib" "$(xt_vc_import_dir)\$(ProjectName)\lib\$(Platform)\$(Configuration)\*.lib"
+
+copy "$(OutDir)*.dll" "$(xt_vc_import_dir)\$(ProjectName)\bin\$(Platform)\$(Configuration)\*.dll"
+
+copy "$(ProjectName).h" "$(xt_vc_import_dir)\$(ProjectName)\include\$(ProjectName).h"</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <AdditionalIncludeDirectories>$(xt_vc_import_dir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalLibraryDirectories>$(xt_vc_import_dir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>if not exist "$(xt_vc_import_dir)\$(ProjectName)\lib\$(Platform)\$(Configuration)" md "$(xt_vc_import_dir)\$(ProjectName)\lib\$(Platform)\$(Configuration)"
+
+if not exist "$(xt_vc_import_dir)\$(ProjectName)\bin\$(Platform)\$(Configuration)" md "$(xt_vc_import_dir)\$(ProjectName)\bin\$(Platform)\$(Configuration)"
+
+if not exist "$(xt_vc_import_dir)\$(ProjectName)\include" md "$(xt_vc_import_dir)\$(ProjectName)\include"
+
+copy "$(OutDir)*.lib" "$(xt_vc_import_dir)\$(ProjectName)\lib\$(Platform)\$(Configuration)\*.lib"
+
+copy "$(OutDir)*.dll" "$(xt_vc_import_dir)\$(ProjectName)\bin\$(Platform)\$(Configuration)\*.dll"
+
+copy "$(ProjectName).h" "$(xt_vc_import_dir)\$(ProjectName)\include\$(ProjectName).h"</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="cpp.hint" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="data_class\cube_box.h" />
+    <ClInclude Include="data_class\obj_cell.h" />
+    <ClInclude Include="data_class\octree.h" />
+    <ClInclude Include="data_class\oc_point.h" />
+    <ClInclude Include="data_class\sy_cengji_weizhi.h" />
+    <ClInclude Include="gj_mode\shalun.h" />
+    <ClInclude Include="send_data_API\get_send_data.h" />
+    <ClInclude Include="tri_mesh\triA_coordinate.h" />
+    <ClInclude Include="tri_mesh\triA_ralations.h" />
+    <ClInclude Include="tri_mesh\triB_coodinate.h" />
+    <ClInclude Include="tri_mesh\triB_ralations.h" />
+    <ClInclude Include="tri_mesh\tri_meshA.h" />
+    <ClInclude Include="tri_mesh\tri_meshB.h" />
+    <ClInclude Include="gj_mode\gongjian.h" />
+    <ClInclude Include="gj_mode\gongjian_stl.h" />
+    <ClInclude Include="MA_010101_NC_Prog_WorkPart.h" />
+    <ClInclude Include="NC_Prog_WorkPart.h" />
+    <ClInclude Include="framework.h" />
+    <ClInclude Include="pch.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="data_class\cube_box.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="data_class\obj_cell.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="data_class\octree.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="data_class\oc_point.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="data_class\sy_cengji_weizhi.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="glad.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="send_data_API\get_send_data.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="tri_mesh\triA_coordinate.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="tri_mesh\triA_ralations.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="tri_mesh\triB_coodinate.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="tri_mesh\triB_ralations.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="tri_mesh\tri_meshA.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="tri_mesh\tri_meshB.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="gj_mode\gongjian.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="gj_mode\gongjian_stl.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="gj_mode\shalun.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="NC_Prog_WorkPart.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

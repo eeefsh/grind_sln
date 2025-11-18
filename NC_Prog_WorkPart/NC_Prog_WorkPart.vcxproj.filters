@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="cpp.hint" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="framework.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MA_010101_NC_Prog_WorkPart.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="NC_Prog_WorkPart.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gj_mode\gongjian.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gj_mode\gongjian_stl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="data_class\sy_cengji_weizhi.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="data_class\cube_box.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="data_class\obj_cell.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="data_class\oc_point.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="data_class\octree.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="tri_mesh\tri_meshA.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="tri_mesh\tri_meshB.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="tri_mesh\triA_coordinate.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="tri_mesh\triA_ralations.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="tri_mesh\triB_coodinate.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="tri_mesh\triB_ralations.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gj_mode\shalun.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="send_data_API\get_send_data.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="NC_Prog_WorkPart.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="gj_mode\gongjian.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="gj_mode\shalun.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="gj_mode\gongjian_stl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="data_class\sy_cengji_weizhi.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="data_class\cube_box.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="data_class\obj_cell.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="data_class\octree.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="tri_mesh\tri_meshA.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="tri_mesh\tri_meshB.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="tri_mesh\triA_coordinate.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="tri_mesh\triA_ralations.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="tri_mesh\triB_coodinate.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="tri_mesh\triB_ralations.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="data_class\oc_point.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="glad.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="send_data_API\get_send_data.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
