@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="头文件\4-编号说明">
+      <UniqueIdentifier>{23577a26-d9f4-4b0a-afff-082236053933}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\3-参数">
+      <UniqueIdentifier>{e28dbf47-5082-46c1-bc8f-b25887f69ca4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\2-工序">
+      <UniqueIdentifier>{65ab2db8-5633-409f-923c-08bb512e715b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\1-铣刀">
+      <UniqueIdentifier>{1c854bc8-9a17-4150-b3ee-3c1506316e27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\0-存储管理">
+      <UniqueIdentifier>{83e8c4ea-cf91-4b3e-a62d-53b9d1e41c9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\0.5-主副子程序">
+      <UniqueIdentifier>{8ca4863c-d2c9-4590-81e1-b9a09a0d6777}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\5-线相关类">
+      <UniqueIdentifier>{df0071e7-3676-4ae3-b08c-2709d082fbe1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\6-程序管理">
+      <UniqueIdentifier>{1a877443-5cdd-4d5e-b51c-6353ab416e10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\7-补偿探测">
+      <UniqueIdentifier>{877d4ae6-65f2-4d9c-86c7-c8d4107fdfc1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\8-Bezier">
+      <UniqueIdentifier>{209b1200-2c30-48e5-95a9-29a43e07efcb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\1-铣刀\1-刀具对象">
+      <UniqueIdentifier>{54a209a8-b057-4768-aa6c-6f2ddf4b3423}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\1-刀具对象">
+      <UniqueIdentifier>{cb7eb225-1cf1-4865-bcc9-cae10a402b1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\1-铣刀\1-刀具对象\1">
+      <UniqueIdentifier>{b67dd7d6-0f4e-46d6-8ee3-91d04de20d90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\1-铣刀\1-刀具对象\2">
+      <UniqueIdentifier>{b4ec8169-82f0-425c-9003-8fa16189b208}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\1-铣刀\1-刀具对象\3">
+      <UniqueIdentifier>{d1de6082-da68-4646-b500-8ce165f7dad9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\1-铣刀\1-刀具对象\4">
+      <UniqueIdentifier>{d94e294f-cd27-4f0c-b14f-c2e1d977d745}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\9-报错机制">
+      <UniqueIdentifier>{01aad2f1-6c26-487c-8a9e-2ff1f08a428c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="cpp.hint" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="framework.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MA_010101_Prog_Manager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Storage_manager.h">
+      <Filter>头文件\0-存储管理</Filter>
+    </ClInclude>
+    <ClInclude Include="Miller_GX_CanShu.h">
+      <Filter>头文件\3-参数</Filter>
+    </ClInclude>
+    <ClInclude Include="type_index.h">
+      <Filter>头文件\4-编号说明</Filter>
+    </ClInclude>
+    <ClInclude Include="editor_line.h">
+      <Filter>头文件\5-线相关类</Filter>
+    </ClInclude>
+    <ClInclude Include="generator_line.h">
+      <Filter>头文件\5-线相关类</Filter>
+    </ClInclude>
+    <ClInclude Include="KongJianXian.h">
+      <Filter>头文件\5-线相关类</Filter>
+    </ClInclude>
+    <ClInclude Include="Obj_Prog.h">
+      <Filter>头文件\5-线相关类</Filter>
+    </ClInclude>
+    <ClInclude Include="RenXian.h">
+      <Filter>头文件\5-线相关类</Filter>
+    </ClInclude>
+    <ClInclude Include="fangzhen_zhu.h">
+      <Filter>头文件\0.5-主副子程序</Filter>
+    </ClInclude>
+    <ClInclude Include="gx_fu.h">
+      <Filter>头文件\0.5-主副子程序</Filter>
+    </ClInclude>
+    <ClInclude Include="void_zi.h">
+      <Filter>头文件\0.5-主副子程序</Filter>
+    </ClInclude>
+    <ClInclude Include="buchang_tance_fu.h">
+      <Filter>头文件\7-补偿探测</Filter>
+    </ClInclude>
+    <ClInclude Include="buchang_tance_zi.h">
+      <Filter>头文件\7-补偿探测</Filter>
+    </ClInclude>
+    <ClInclude Include="length_tance_fu.h">
+      <Filter>头文件\7-补偿探测</Filter>
+    </ClInclude>
+    <ClInclude Include="Bezier_Curve3_QM.h">
+      <Filter>头文件\8-Bezier</Filter>
+    </ClInclude>
+    <ClInclude Include="QuMian_Grovving.h">
+      <Filter>头文件\8-Bezier</Filter>
+    </ClInclude>
+    <ClInclude Include="Tool_Base.h">
+      <Filter>头文件\1-铣刀\1-刀具对象\1</Filter>
+    </ClInclude>
+    <ClInclude Include="Tool_Base_Members.h">
+      <Filter>头文件\1-铣刀\1-刀具对象\2</Filter>
+    </ClInclude>
+    <ClInclude Include="Tool_Geo_Obj.h">
+      <Filter>头文件\1-铣刀\1-刀具对象\3</Filter>
+    </ClInclude>
+    <ClInclude Include="Tool_Canshu.h">
+      <Filter>头文件\1-铣刀\1-刀具对象\3</Filter>
+    </ClInclude>
+    <ClInclude Include="TooL_canshu_2.h">
+      <Filter>头文件\1-铣刀\1-刀具对象\4</Filter>
+    </ClInclude>
+    <ClInclude Include="Miller_GX_Base.h">
+      <Filter>头文件\2-工序</Filter>
+    </ClInclude>
+    <ClInclude Include="Miller_GX_Obj.h">
+      <Filter>头文件\2-工序</Filter>
+    </ClInclude>
+    <ClInclude Include="Tool_Obj.h">
+      <Filter>头文件\1-铣刀\1-刀具对象\1</Filter>
+    </ClInclude>
+    <ClInclude Include="Prog_Manager.h">
+      <Filter>头文件\6-程序管理</Filter>
+    </ClInclude>
+    <ClInclude Include="arma_serialization.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="nc_frame.h">
+      <Filter>头文件\7-补偿探测</Filter>
+    </ClInclude>
+    <ClInclude Include="zi_JC_P_tance_3_axis.h">
+      <Filter>头文件\7-补偿探测</Filter>
+    </ClInclude>
+    <ClInclude Include="tance_fu_qdm.h">
+      <Filter>头文件\7-补偿探测</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="generator_line.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="KongJianXian.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Miller_GX_Base.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Obj_Prog.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Storage_manager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="fangzhen_zhu.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="gx_fu.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="void_zi.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="buchang_tance_fu.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="buchang_tance_zi.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="length_tance_fu.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Bezier_Curve3_QM.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="QuMian_Grovving.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Tool_Base.cpp">
+      <Filter>源文件\1-刀具对象</Filter>
+    </ClCompile>
+    <ClCompile Include="Tool_Geo_Obj.cpp">
+      <Filter>源文件\1-刀具对象</Filter>
+    </ClCompile>
+    <ClCompile Include="Tool_Base_Members.cpp">
+      <Filter>源文件\1-刀具对象</Filter>
+    </ClCompile>
+    <ClCompile Include="Tool_Canshu.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Miller_GX_Obj.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Tool_Obj.cpp">
+      <Filter>源文件\1-刀具对象</Filter>
+    </ClCompile>
+    <ClCompile Include="Miller_GX_CanShu.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TooL_canshu_2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="glad.c">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Prog_Manager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="nc_frame.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zi_JC_P_tance_3_axis.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="tance_fu_qdm.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
