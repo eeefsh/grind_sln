@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <ProjectGuid>{6279f7cc-1961-4f63-9e38-97327aa01eb5}</ProjectGuid>
+    <Keyword>MFCDLLProj</Keyword>
+    <RootNamespace>ShaLun_dialog_dll</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)OutProgram\$(ProjectName)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)MidFiles\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)OutProgram\$(ProjectName)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)MidFiles\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)OutProgram\$(ProjectName)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)MidFiles\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)OutProgram\$(ProjectName)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)MidFiles\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_WINDOWS;_DEBUG;_AFXEXT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <AdditionalIncludeDirectories>$(xt_vc_import_dir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <ModuleDefinitionFile>.\ShaLun_dialog_dll.def</ModuleDefinitionFile>
+      <AdditionalLibraryDirectories>$(xt_vc_import_dir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <PostBuildEvent>
+      <Command>if not exist "$(xt_vc_import_dir)\$(ProjectName)\lib\$(Platform)\$(Configuration)" md "$(xt_vc_import_dir)\$(ProjectName)\lib\$(Platform)\$(Configuration)"
+
+if not exist "$(xt_vc_import_dir)\$(ProjectName)\bin\$(Platform)\$(Configuration)" md "$(xt_vc_import_dir)\$(ProjectName)\bin\$(Platform)\$(Configuration)"
+
+if not exist "$(xt_vc_import_dir)\$(ProjectName)\include" md "$(xt_vc_import_dir)\$(ProjectName)\include"
+
+copy "$(OutDir)*.lib" "$(xt_vc_import_dir)\$(ProjectName)\lib\$(Platform)\$(Configuration)\*.lib"
+
+copy "$(OutDir)*.dll" "$(xt_vc_import_dir)\$(ProjectName)\bin\$(Platform)\$(Configuration)\*.dll"
+
+
+copy "MA_010101_$(ProjectName).h" "$(xt_vc_import_dir)\manager_h\MA_010101_$(ProjectName).h"
+
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_AFXEXT;xt_WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <AdditionalIncludeDirectories>$(xt_vc_import_dir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <ModuleDefinitionFile>.\ShaLun_dialog_dll.def</ModuleDefinitionFile>
+      <AdditionalLibraryDirectories>$(xt_vc_import_dir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <PostBuildEvent>
+      <Command>if not exist "$(xt_vc_import_dir)\$(ProjectName)\lib\$(Platform)\$(Configuration)" md "$(xt_vc_import_dir)\$(ProjectName)\lib\$(Platform)\$(Configuration)"
+
+if not exist "$(xt_vc_import_dir)\$(ProjectName)\bin\$(Platform)\$(Configuration)" md "$(xt_vc_import_dir)\$(ProjectName)\bin\$(Platform)\$(Configuration)"
+
+if not exist "$(xt_vc_import_dir)\$(ProjectName)\include" md "$(xt_vc_import_dir)\$(ProjectName)\include"
+
+copy "$(OutDir)*.lib" "$(xt_vc_import_dir)\$(ProjectName)\lib\$(Platform)\$(Configuration)\*.lib"
+
+copy "$(OutDir)*.dll" "$(xt_vc_import_dir)\$(ProjectName)\bin\$(Platform)\$(Configuration)\*.dll"
+
+
+copy "MA_010101_$(ProjectName).h" "$(xt_vc_import_dir)\manager_h\MA_010101_$(ProjectName).h"
+
+copy "dialog_Beixing_shalun.h" "$(xt_vc_import_dir)\$(ProjectName)\include\dialog_Beixing_shalun.h"
+copy "dialog_Diexing_shalun.h" "$(xt_vc_import_dir)\$(ProjectName)\include\dialog_Diexing_shalun.h"
+copy "dialog_DXF_shalun.h" "$(xt_vc_import_dir)\$(ProjectName)\include\dialog_DXF_shalun.h"
+copy "dialog_group_create.h" "$(xt_vc_import_dir)\$(ProjectName)\include\dialog_group_create.h"
+copy "dialog_group_list.h" "$(xt_vc_import_dir)\$(ProjectName)\include\dialog_group_list.h"
+copy "dialog_Jianjiao_shalun.h" "$(xt_vc_import_dir)\$(ProjectName)\include\dialog_Jianjiao_shalun.h"
+copy "dialog_Ping_shalun.h" "$(xt_vc_import_dir)\$(ProjectName)\include\dialog_Ping_shalun.h"
+copy "dialog_wheel_create.h" "$(xt_vc_import_dir)\$(ProjectName)\include\dialog_wheel_create.h"
+copy "dialog_wheel_list.h" "$(xt_vc_import_dir)\$(ProjectName)\include\dialog_wheel_list.h"
+copy "dialog_Yuanjiao_shalun.h" "$(xt_vc_import_dir)\$(ProjectName)\include\dialog_Yuanjiao_shalun.h"
+
+</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>copy "$(xt_vc_import_dir)\NC_wheel_data\lib\$(Platform)\$(Configuration)\*.lib" "$(OutDir)*.lib"
+copy "$(xt_vc_import_dir)\NC_wheel_data\bin\$(Platform)\$(Configuration)\*.dll" "$(OutDir)*.dll"
+
+copy "$(xt_vc_import_dir)\MFC_CustomControl\lib\$(Platform)\$(Configuration)\*.lib" "$(OutDir)*.lib"
+copy "$(xt_vc_import_dir)\MFC_CustomControl\bin\$(Platform)\$(Configuration)\*.dll" "$(OutDir)*.dll"</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_AFXEXT;xt_WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <AdditionalIncludeDirectories>$(xt_vc_import_dir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ModuleDefinitionFile>.\ShaLun_dialog_dll.def</ModuleDefinitionFile>
+      <AdditionalLibraryDirectories>$(xt_vc_import_dir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <PostBuildEvent>
+      <Command>if not exist "$(xt_vc_import_dir)\$(ProjectName)\lib\$(Platform)\$(Configuration)" md "$(xt_vc_import_dir)\$(ProjectName)\lib\$(Platform)\$(Configuration)"
+
+if not exist "$(xt_vc_import_dir)\$(ProjectName)\bin\$(Platform)\$(Configuration)" md "$(xt_vc_import_dir)\$(ProjectName)\bin\$(Platform)\$(Configuration)"
+
+if not exist "$(xt_vc_import_dir)\$(ProjectName)\include" md "$(xt_vc_import_dir)\$(ProjectName)\include"
+
+copy "$(OutDir)*.lib" "$(xt_vc_import_dir)\$(ProjectName)\lib\$(Platform)\$(Configuration)\*.lib"
+
+copy "$(OutDir)*.dll" "$(xt_vc_import_dir)\$(ProjectName)\bin\$(Platform)\$(Configuration)\*.dll"
+
+
+copy "MA_010101_$(ProjectName).h" "$(xt_vc_import_dir)\manager_h\MA_010101_$(ProjectName).h"
+
+copy "dialog_Beixing_shalun.h" "$(xt_vc_import_dir)\$(ProjectName)\include\dialog_Beixing_shalun.h"
+copy "dialog_Diexing_shalun.h" "$(xt_vc_import_dir)\$(ProjectName)\include\dialog_Diexing_shalun.h"
+copy "dialog_DXF_shalun.h" "$(xt_vc_import_dir)\$(ProjectName)\include\dialog_DXF_shalun.h"
+copy "dialog_group_create.h" "$(xt_vc_import_dir)\$(ProjectName)\include\dialog_group_create.h"
+copy "dialog_group_list.h" "$(xt_vc_import_dir)\$(ProjectName)\include\dialog_group_list.h"
+copy "dialog_Jianjiao_shalun.h" "$(xt_vc_import_dir)\$(ProjectName)\include\dialog_Jianjiao_shalun.h"
+copy "dialog_Ping_shalun.h" "$(xt_vc_import_dir)\$(ProjectName)\include\dialog_Ping_shalun.h"
+copy "dialog_wheel_create.h" "$(xt_vc_import_dir)\$(ProjectName)\include\dialog_wheel_create.h"
+copy "dialog_wheel_list.h" "$(xt_vc_import_dir)\$(ProjectName)\include\dialog_wheel_list.h"
+copy "dialog_Yuanjiao_shalun.h" "$(xt_vc_import_dir)\$(ProjectName)\include\dialog_Yuanjiao_shalun.h"
+</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>copy "$(xt_vc_import_dir)\MFC_CustomControl\lib\$(Platform)\$(Configuration)\*.lib" "$(OutDir)*.lib"
+copy "$(xt_vc_import_dir)\MFC_CustomControl\bin\$(Platform)\$(Configuration)\*.dll" "$(OutDir)*.dll"
+
+copy "$(xt_vc_import_dir)\NC_wheel_data\lib\$(Platform)\$(Configuration)\*.lib" "$(OutDir)*.lib"
+copy "$(xt_vc_import_dir)\NC_wheel_data\bin\$(Platform)\$(Configuration)\*.dll" "$(OutDir)*.dll"
+
+</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_WINDOWS;NDEBUG;_AFXEXT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <AdditionalIncludeDirectories>$(xt_vc_import_dir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ModuleDefinitionFile>.\ShaLun_dialog_dll.def</ModuleDefinitionFile>
+      <AdditionalLibraryDirectories>$(xt_vc_import_dir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <PostBuildEvent>
+      <Command>if not exist "$(xt_vc_import_dir)\$(ProjectName)\lib\$(Platform)\$(Configuration)" md "$(xt_vc_import_dir)\$(ProjectName)\lib\$(Platform)\$(Configuration)"
+
+if not exist "$(xt_vc_import_dir)\$(ProjectName)\bin\$(Platform)\$(Configuration)" md "$(xt_vc_import_dir)\$(ProjectName)\bin\$(Platform)\$(Configuration)"
+
+if not exist "$(xt_vc_import_dir)\$(ProjectName)\include" md "$(xt_vc_import_dir)\$(ProjectName)\include"
+
+copy "$(OutDir)*.lib" "$(xt_vc_import_dir)\$(ProjectName)\lib\$(Platform)\$(Configuration)\*.lib"
+
+copy "$(OutDir)*.dll" "$(xt_vc_import_dir)\$(ProjectName)\bin\$(Platform)\$(Configuration)\*.dll"
+
+
+copy "MA_010101_$(ProjectName).h" "$(xt_vc_import_dir)\manager_h\MA_010101_$(ProjectName).h"
+
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="dialog_Beixing_shalun.cpp" />
+    <ClCompile Include="dialog_Diexing_shalun.cpp" />
+    <ClCompile Include="dialog_DXF_shalun.cpp" />
+    <ClCompile Include="dialog_group_create.cpp" />
+    <ClCompile Include="dialog_group_list.cpp" />
+    <ClCompile Include="dialog_Jianjiao_shalun.cpp" />
+    <ClCompile Include="dialog_Ping_shalun.cpp" />
+    <ClCompile Include="dialog_wheel_create.cpp" />
+    <ClCompile Include="dialog_wheel_list.cpp" />
+    <ClCompile Include="dialog_Yuanjiao_shalun.cpp" />
+    <ClCompile Include="dllmain.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="提取库ShaLun_dialog_dll.bat" />
+    <None Include="清理当前import.bat" />
+    <None Include="ShaLun_dialog_dll.def" />
+    <None Include="res\ShaLun_dialog_dll.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="dialog_Beixing_shalun.h" />
+    <ClInclude Include="dialog_Diexing_shalun.h" />
+    <ClInclude Include="dialog_DXF_shalun.h" />
+    <ClInclude Include="dialog_group_create.h" />
+    <ClInclude Include="dialog_group_list.h" />
+    <ClInclude Include="dialog_Jianjiao_shalun.h" />
+    <ClInclude Include="dialog_Ping_shalun.h" />
+    <ClInclude Include="dialog_wheel_create.h" />
+    <ClInclude Include="dialog_wheel_list.h" />
+    <ClInclude Include="dialog_Yuanjiao_shalun.h" />
+    <ClInclude Include="framework.h" />
+    <ClInclude Include="MA_010101_ShaLun_dialog_dll.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ShaLun_dialog_dll.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
