@@ -1,3 +1,3 @@
 # grind_sln
-all uesd prj 
+all uesd prj  /n
 1.cereal 需要解压到p_manager下
