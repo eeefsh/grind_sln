@@ -8,7 +8,7 @@ using namespace arma;
 
 virtual_machine::virtual_machine()
 {
-	tool_using_num = 0;
+	tool_using_num = -1;
 	reset();
 
 	//

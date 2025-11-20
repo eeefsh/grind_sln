@@ -74,8 +74,8 @@ private:
 	//vec BL_at;
 	umat BL_at_JG;
 private:
-	int tool_using_num;  //只允许0-5, 正在使用的砂轮组
-	int using_sl_pos_on_slz; //砂轮组上正在使用的2d仿真砂轮，的位置0,1,2
+	int tool_using_num=-1;  //只允许0-5, 正在使用的砂轮组
+	int using_sl_pos_on_slz=-1; //砂轮组上正在使用的2d仿真砂轮，的位置0,1,2
 
 private:
 	vec5 point_before;
